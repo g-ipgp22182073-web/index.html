@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membina Legasi Pendidik</title>
+  <meta name="description" content="E-portfolio pembangunan profesional kendiri dan kerjaya berasaskan enam peringkat perkembangan guru KPM dan Standard Guru Malaysia 2.0." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --bg:#f7f4ee; --surface:#fffdf9; --surface-2:#f3eee4; --line:#ddd5c8;
+      --text:#2b2419; --muted:#655c4e; --soft:#8c8376; --inverse:#fffdfa;
+      --primary:#1d7468; --primary-2:#f3b86d; --accent:#6d8cff; --success:#4f7d2f;
+      --shadow:0 18px 45px rgba(63,46,20,.10); --radius:22px; --radius-sm:14px;
+      --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.25rem; --space-6:1.5rem; --space-8:2rem; --space-10:2.5rem; --space-12:3rem; --space-16:4rem;
+      --hero: clamp(2.4rem, 4vw, 4.8rem); --h1: clamp(2rem, 3vw, 3rem); --h2: clamp(1.4rem, 2vw, 2rem); --h3: clamp(1.1rem, 1.4vw, 1.35rem); --body: clamp(1rem, .8rem + .4vw, 1.08rem); --small: .95rem;
+    }
+    [data-theme="dark"] {
+      --bg:#171512; --surface:#211d18; --surface-2:#2a241e; --line:#40372d;
+      --text:#f7f1e7; --muted:#d2c8bb; --soft:#9f9485; --inverse:#171512;
+      --primary:#67b9ab; --primary-2:#f0be7f; --accent:#90a6ff; --success:#85c15d;
+      --shadow:0 18px 45px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"Atkinson Hyperlegible Next",sans-serif;background:radial-gradient(circle at top right, rgba(243,184,109,.14), transparent 30%),var(--bg);color:var(--text);line-height:1.75;font-size:var(--body)}
+    img,svg{max-width:100%;display:block} a{text-decoration:none;color:inherit} button{font:inherit}
+    .skip{position:absolute;left:-9999px;top:auto}.skip:focus{left:1rem;top:1rem;z-index:999;background:var(--surface);padding:.75rem 1rem;border-radius:999px;border:1px solid var(--line)}
+    .container{width:min(1140px,calc(100% - 2rem));margin:auto}
+    header{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid color-mix(in srgb,var(--line) 80%, transparent)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}.brand{display:flex;align-items:center;gap:.8rem;font-weight:800}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--primary),var(--primary-2));display:grid;place-items:center;box-shadow:var(--shadow)}
+    .logo svg{width:24px;height:24px;color:#fffef9}.brand span{font-family:"Baloo 2",cursive;font-size:1.35rem;line-height:1}
+    .menu{display:flex;flex-wrap:wrap;gap:.55rem;align-items:center}.menu a,.theme-btn{padding:.7rem .95rem;border-radius:999px;border:1px solid transparent;color:var(--muted)} .menu a:hover,.menu a:focus-visible,.theme-btn:hover{background:var(--surface);border-color:var(--line);color:var(--text)}
+    .theme-btn{background:var(--surface-2);border-color:var(--line);cursor:pointer;min-width:44px;min-height:44px}
+    .hero{padding:4.5rem 0 2.5rem}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.4rem;align-items:stretch}
+    .card{background:var(--surface);border:1px solid color-mix(in srgb,var(--line) 85%, transparent);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero-main{padding:2rem}.eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:color-mix(in srgb,var(--primary) 12%, var(--surface));color:var(--primary);padding:.45rem .9rem;border-radius:999px;font-weight:700;font-size:.95rem}
+    h1,h2,h3{line-height:1.15;margin:0 0 .8rem;color:var(--text)} h1{font-family:"Baloo 2",cursive;font-size:var(--hero);max-width:10ch} h2{font-size:var(--h1)} h3{font-size:var(--h3)} p{margin:.65rem 0;color:var(--muted)}
+    .hero p{max-width:62ch}.hero-stats{display:grid;gap:.9rem;padding:1.2rem}.mini{padding:1rem 1.05rem;border-radius:18px;background:var(--surface-2);border:1px solid color-mix(in srgb,var(--line) 80%, transparent)} .mini strong{display:block;color:var(--text);font-size:1rem;margin-bottom:.2rem}
+    .cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.2rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.9rem 1.15rem;border-radius:999px;border:1px solid var(--line);font-weight:700;min-height:46px}.btn-primary{background:var(--primary);color:var(--inverse);border-color:var(--primary)} .btn-secondary{background:var(--surface-2)}
+    section{padding:1.25rem 0 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1rem}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.panel{padding:1.35rem}
+    .highlight{background:linear-gradient(180deg,color-mix(in srgb,var(--primary) 10%, var(--surface)),var(--surface));}
+    .pill-list,.ref-list,.plan-list,.sgm-list,.compact{display:grid;gap:.75rem}.pill{display:inline-block;padding:.35rem .8rem;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:.92rem;color:var(--muted);margin:.15rem .35rem .15rem 0}
+    .timeline{display:grid;gap:1rem}.stage{position:relative;padding:1.15rem 1.15rem 1.15rem 1.2rem;border-radius:20px;background:var(--surface);border:1px solid var(--line)} .stage::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:7px;border-radius:20px;background:linear-gradient(180deg,var(--primary),var(--primary-2))}
+    .stage .tag{display:inline-flex;padding:.35rem .7rem;background:color-mix(in srgb,var(--primary) 12%, var(--surface));color:var(--primary);border-radius:999px;font-weight:700;font-size:.88rem;margin-bottom:.7rem}
+    .stage ul,.quiz-list,.plan-list,.ref-list{padding-left:1.1rem;margin:.45rem 0}.stage li,.quiz-list li,.plan-list li,.ref-list li{margin:.35rem 0;color:var(--muted)}
+    .sgm-grid,.plan-grid,.media-grid,.footer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+    .sgm-box,.plan-box,.media-box{padding:1.1rem;border-radius:18px;background:var(--surface-2);border:1px solid var(--line)}
+    .career-map{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .path{padding:1rem;border-radius:20px;background:var(--surface);border:1px solid var(--line)}
+    .badge{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .7rem;background:color-mix(in srgb,var(--primary-2) 20%, var(--surface));border-radius:999px;color:var(--text);font-size:.88rem;font-weight:700}
+    .quiz-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem}.question{padding:1.2rem}.options{display:grid;gap:.7rem;margin-top:1rem}.option{width:100%;text-align:left;padding:.9rem 1rem;border-radius:16px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer}.option:hover,.option:focus-visible{border-color:var(--primary);transform:translateY(-1px)} .option.correct{background:color-mix(in srgb,var(--success) 16%, var(--surface));border-color:var(--success)} .option.wrong{background:color-mix(in srgb,#c85a54 12%, var(--surface));border-color:#c85a54}
+    .score{font-size:2.1rem;font-weight:800;color:var(--primary);margin:.3rem 0} .tracker{padding:1.2rem}
+    .meter{height:14px;background:var(--surface-2);border-radius:999px;overflow:hidden;border:1px solid var(--line);margin:.8rem 0 1rem}.meter > span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--primary-2));border-radius:999px;transition:width .45s ease}
+    table{width:100%;border-collapse:collapse;font-size:.96rem} th,td{border:1px solid var(--line);padding:.85rem;text-align:left;vertical-align:top} th{background:var(--surface-2);color:var(--text)} td{color:var(--muted)}
+    .infographic{padding:1.35rem}.ring-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}.ring{background:var(--surface-2);border:1px solid var(--line);border-radius:22px;padding:1rem;display:grid;justify-items:center;text-align:center;gap:.55rem}.ring svg{width:78px;height:78px}
+    footer{padding:2rem 0 4rem}.footer-note{padding:1.2rem}
+    .apa{font-size:.98rem;color:var(--text)} .apa li{margin:.6rem 0;line-height:1.7}
+    .muted{color:var(--soft)} .small{font-size:var(--small)}
+
+    .sgm-link{margin-top:.85rem;padding:.9rem 1rem;border-radius:16px;background:color-mix(in srgb,var(--primary) 10%, var(--surface));border:1px dashed color-mix(in srgb,var(--primary) 35%, var(--line));}
+    .sgm-link strong{color:var(--text)}
+    .roadmap-grid{display:grid;grid-template-columns:320px 1fr;gap:1rem}
+    .roadmap-nav{display:grid;gap:.75rem}
+    .road-btn{width:100%;text-align:left;padding:1rem 1rem;border-radius:18px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;font-weight:700;color:var(--text);min-height:56px}
+    .road-btn span{display:block;font-weight:500;font-size:.92rem;color:var(--muted);margin-top:.2rem}
+    .road-btn.active,.road-btn:hover,.road-btn:focus-visible{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 10%, var(--surface))}
+    .road-panel{padding:1.25rem}
+    .road-card{display:none}
+    .road-card.active{display:block}
+    .road-card ul{padding-left:1.1rem;margin:.4rem 0}
+    .road-card li{margin:.35rem 0;color:var(--muted)}
+    .check-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+    .check-option{padding:1rem;border-radius:18px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;text-align:left;min-height:110px}
+    .check-option:hover,.check-option:focus-visible,.check-option.selected{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 10%, var(--surface))}
+    .result-box{margin-top:1rem;padding:1rem;border-radius:18px;background:var(--surface-2);border:1px solid var(--line)}
+    @media (max-width: 960px){.roadmap-grid,.check-grid{grid-template-columns:1fr}}
+
+    @media (max-width: 960px){.hero-grid,.two-col,.sgm-grid,.plan-grid,.career-map,.quiz-wrap,.media-grid,.footer-grid,.ring-grid{grid-template-columns:1fr}.menu{display:none}h1{max-width:12ch}.hero{padding-top:3rem}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#kandungan">Lompat ke kandungan utama</a>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#utama" aria-label="Ke halaman utama">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 18c4-1 10-1 14 0"/><path d="M6 16V7.5A2.5 2.5 0 0 1 8.5 5H18v11"/><path d="M6 8h8"/><path d="M9 12h6"/>
+          </svg>
+        </div>
+        <span>Legasi Pendidik</span>
+      </a>
+      <nav class="menu" aria-label="Navigasi utama">
+        <a href="#pengenalan">Pengenalan</a>
+        <a href="#peringkat">6 Peringkat</a>
+        <a href="#sgm">SGM 2.0</a>
+        <a href="#pelan">Pelan Tindakan</a>
+        <a href="#kuiz">Kuiz</a>
+        <a href="#rujukan">Rujukan</a>
+      </nav>
+      <button class="theme-btn" data-theme-toggle aria-label="Tukar mod warna">☾</button>
+    </div>
+  </header>
+
+  <main id="kandungan">
+    <section class="hero" id="utama">
+      <div class="container hero-grid">
+        <article class="card hero-main">
+          <div class="eyebrow">Tugasan 2 • Laman Web Peribadi / E-Portfolio</div>
+          <h1>Membina legasi pendidik melalui pembangunan profesional berterusan.</h1>
+          <p id="pengenalan">Laman web ini menghuraikan pembangunan profesional kendiri dan kerjaya saya sebagai bakal guru berasaskan enam peringkat perkembangan guru KPM dan Standard Guru Malaysia 2.0. Kandungan disusun untuk menunjukkan pemahaman terhadap ciri guru berkualiti, cadangan perkembangan profesional, pelan tindakan yang realistik, serta kesiapsiagaan menghadapi cabaran pendidikan abad ke-21 hingga ke peringkat global.</p>
+          <p>Pembangunan profesional guru bukan proses yang berlaku sekali sahaja, tetapi satu perjalanan berterusan yang menuntut penguasaan ilmu, amalan reflektif, etika profesional, pelibatan komuniti, inovasi digital dan keupayaan menyesuaikan diri dengan perubahan semasa. Oleh itu, e-portfolio ini dibina sebagai peta perkembangan yang menunjukkan bagaimana saya ingin berkembang daripada guru permulaan kepada pendidik yang matang, berdaya saing dan mampu menyumbang pada skala yang lebih luas.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#peringkat">Teroka kandungan utama</a>
+            <a class="btn btn-secondary" href="#kuiz">Cuba kuiz interaktif</a>
+          </div>
+        </article>
+        <aside class="hero-stats card" aria-label="Fokus utama laman">
+          <div class="mini"><strong>Fokus 1</strong>Memahami enam peringkat perkembangan guru KPM secara tersusun dan mudah dibaca.</div>
+          <div class="mini"><strong>Fokus 2</strong>Menghubungkan dimensi SGM 2.0 dengan kualiti guru yang profesional, reflektif dan berintegriti.</div>
+          <div class="mini"><strong>Fokus 3</strong>Membina pelan tindakan kendiri yang realistik, progresif dan berpandangan jauh.</div>
+          <div class="mini"><strong>Fokus 4</strong>Mengukuhkan pembelajaran sepanjang hayat melalui AI, PLC maya, kelayakan mikro dan jaringan global.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container two-col">
+        <article class="card panel highlight">
+          <div class="section-head"><h2>Maksud guru berkualiti</h2></div>
+          <p>Guru berkualiti ialah guru yang mempunyai penguasaan ilmu, keupayaan instruksional, nilai profesional yang kukuh, hubungan baik dengan komuniti dan kesediaan memperbaiki amalan melalui refleksi serta pembelajaran berterusan. Dalam konteks tugasan ini, kualiti guru perlu dilihat bukan sahaja pada kecekapan mengajar, tetapi juga pada keupayaan merancang pertumbuhan kerjaya secara sistematik berpandukan standard nasional.</p>
+          <div>
+            <span class="pill">Orientasi ilmu</span>
+            <span class="pill">Pelibatan komuniti</span>
+            <span class="pill">Kualiti peribadi</span>
+            <span class="pill">Instruksional</span>
+            <span class="pill">Etika keguruan</span>
+            <span class="pill">Pembelajaran sepanjang hayat</span>
+          </div>
+        </article>
+        <article class="card panel">
+          <div class="section-head"><h2>Tujuan e-portfolio</h2></div>
+          <ul class="compact">
+            <li>Menjelaskan pemahaman tentang enam peringkat perkembangan guru KPM.</li>
+            <li>Menghuraikan Standard Guru Malaysia 2.0 sebagai panduan pembinaan identiti guru berkualiti.</li>
+            <li>Mencadangkan perkembangan profesional kendiri, kerjaya dan pelan tindakan yang boleh dilaksanakan.</li>
+            <li>Menunjukkan pendekatan futuristik melalui penggunaan teknologi, data, AI dan amalan profesional global.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="peringkat">
+      <div class="container">
+        <div class="section-head"><h2>Enam peringkat perkembangan guru KPM</h2></div>
+        <div class="timeline">
+          <article class="stage">
+            <div class="tag">Peringkat 1 • Permulaan</div>
+            <h3>Menyesuaikan diri dengan budaya sekolah dan mengukuhkan asas profesion</h3>
+            <p>Pada peringkat ini, guru baharu memerlukan bimbingan untuk memahami peranan, rutin sekolah, pengurusan bilik darjah, etika kerja dan asas pedagogi. Fokus utama ialah membina keyakinan, disiplin profesional, kemahiran merancang pengajaran dan kesediaan menerima maklum balas.</p>
+            <ul>
+              <li>Menguasai asas PdP, pentaksiran dan pengurusan kelas.</li>
+              <li>Mempelajari budaya kerja sekolah serta etika penjawat awam.</li>
+              <li>Mendapat sokongan mentor dan membuat refleksi awal secara konsisten.</li>
+            </ul>
+            <div class="sgm-link"><strong>Hubungan dengan SGM 2.0:</strong> Pada tahap ini, fokus diberikan kepada orientasi ilmu, kualiti peribadi dan instruksional asas supaya guru dapat membina identiti profesional yang stabil sejak awal perkhidmatan.</div>
+          </article>
+          <article class="stage">
+            <div class="tag">Peringkat 2 • Pelaksana</div>
+            <h3>Melaksanakan tugas dengan lebih cekap dan konsisten</h3>
+            <p>Guru mula menunjukkan kestabilan dalam pengajaran, pengurusan masa, penyediaan bahan dan pelaksanaan tugas rasmi. Pada tahap ini, guru bukan sekadar mengikuti arahan, tetapi mula memahami rasional di sebalik amalan pengajaran yang berkesan.</p>
+            <ul>
+              <li>Merancang pengajaran berasaskan objektif dan keperluan murid.</li>
+              <li>Menggunakan pelbagai strategi pembelajaran aktif dan pentaksiran formatif.</li>
+              <li>Memperbaiki mutu kerja melalui data pencapaian dan refleksi kendiri.</li>
+            </ul>
+            <div class="sgm-link"><strong>Hubungan dengan SGM 2.0:</strong> Guru pada tahap pelaksana perlu memperkukuh instruksional, penilaian kendiri dan amalan profesional supaya kualiti kerja menjadi lebih konsisten dan berkesan.</div>
+          </article>
+          <article class="stage">
+            <div class="tag">Peringkat 3 • Penggerak</div>
+            <h3>Menjadi penggerak inovasi kecil di bilik darjah dan sekolah</h3>
+            <p>Pada tahap ini, guru mula berani mencuba kaedah baharu, berkongsi idea, menyelesaikan masalah pengajaran dan menyumbang kepada penambahbaikan di peringkat sekolah. Guru tidak lagi pasif, sebaliknya mula menjadi agen perubahan dalam ruang profesionalnya.</p>
+            <ul>
+              <li>Menggunakan teknologi digital, bahan inovatif dan strategi kreatif.</li>
+              <li>Melibatkan diri dalam projek sekolah, bengkel, wacana ilmu atau kajian tindakan.</li>
+              <li>Mendorong murid menjadi lebih aktif, kritis dan berdikari.</li>
+            </ul>
+            <div class="sgm-link"><strong>Hubungan dengan SGM 2.0:</strong> Tahap penggerak menonjolkan orientasi ilmu yang berkembang, inovasi instruksional dan pelibatan komuniti profesional secara lebih aktif.</div>
+          </article>
+          <article class="stage">
+            <div class="tag">Peringkat 4 • Pembimbing</div>
+            <h3>Membantu rakan sejawat dan membina budaya kolaboratif</h3>
+            <p>Guru yang semakin matang mula berkongsi kepakaran, memberi bimbingan rakan sebaya dan menyumbang dalam komuniti pembelajaran profesional. Tahap ini menonjolkan kemahiran interpersonal, kepimpinan instruksional dan kesediaan membina orang lain.</p>
+            <ul>
+              <li>Terlibat dalam PLC, peer coaching, lesson study atau sesi perkongsian guru.</li>
+              <li>Membimbing guru baharu secara formal atau tidak formal.</li>
+              <li>Menyumbang idea yang meningkatkan budaya profesional sekolah.</li>
+            </ul>
+            <div class="sgm-link"><strong>Hubungan dengan SGM 2.0:</strong> Pada tahap pembimbing, aspek pelibatan komuniti, etika profesional dan kualiti peribadi menjadi semakin penting kerana guru mula membina orang lain.</div>
+          </article>
+          <article class="stage">
+            <div class="tag">Peringkat 5 • Peneraju</div>
+            <h3>Memimpin penambahbaikan dan mempengaruhi hala tuju sekolah</h3>
+            <p>Guru di tahap ini mempunyai kredibiliti yang lebih tinggi dan mampu memimpin inisiatif sekolah secara terancang. Keupayaan membuat keputusan, menilai keperluan latihan dan memacu perubahan menjadi semakin penting.</p>
+            <ul>
+              <li>Memimpin panitia, projek inovasi, komuniti profesional atau program sekolah.</li>
+              <li>Menggunakan data untuk merancang intervensi yang lebih berfokus.</li>
+              <li>Menghubungkan amalan bilik darjah dengan aspirasi sekolah dan dasar pendidikan.</li>
+            </ul>
+            <div class="sgm-link"><strong>Hubungan dengan SGM 2.0:</strong> Guru peneraju perlu menunjukkan akauntabiliti tinggi, kepimpinan instruksional dan keupayaan mempengaruhi warga sekolah secara beretika dan berwibawa.</div>
+          </article>
+          <article class="stage">
+            <div class="tag">Peringkat 6 • Pemikir Strategik</div>
+            <h3>Berfikiran jauh, membuat keputusan profesional dan menyumbang secara lebih luas</h3>
+            <p>Peringkat tertinggi menuntut guru melihat pendidikan secara makro, bukan sekadar bilik darjah. Guru berupaya membuat pertimbangan strategik, menilai trend global, membina jaringan profesional dan membawa inovasi yang memberi impak merentas sekolah, daerah atau komuniti pendidikan yang lebih luas.</p>
+            <ul>
+              <li>Menganalisis cabaran pendidikan semasa dan masa depan secara strategik.</li>
+              <li>Membina reputasi profesional melalui penyelidikan, kepimpinan dan jaringan global.</li>
+              <li>Mengangkat profesion keguruan melalui inovasi, etika dan pembelajaran sepanjang hayat.</li>
+            </ul>
+            <div class="sgm-link"><strong>Hubungan dengan SGM 2.0:</strong> Pada tahap tertinggi ini, guru mengintegrasikan semua dimensi SGM 2.0 secara matang melalui keputusan strategik, jaringan profesional dan pandangan global.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sgm">
+      <div class="container">
+        <div class="section-head"><h2>Standard Guru Malaysia 2.0</h2></div>
+        <div class="sgm-grid">
+          <article class="card panel">
+            <p>SGM 2.0 menjadi rujukan penting untuk guru menilai kekuatan, mengenal pasti kelompangan kompetensi dan merancang pembangunan profesionalisme berterusan. Standard ini membantu guru melihat kualiti profesional secara menyeluruh, bukan hanya dari aspek akademik, tetapi juga nilai, hubungan sosial dan amalan pengajaran.</p>
+            <div class="sgm-list">
+              <div class="sgm-box"><h3>Orientasi ilmu</h3><p>Guru perlu menguasai kandungan subjek, pedagogi semasa dan pengetahuan baharu supaya pengajaran kekal relevan serta bermakna kepada murid.</p></div>
+              <div class="sgm-box"><h3>Pelibatan komuniti</h3><p>Guru berkualiti membina hubungan positif dengan ibu bapa, sekolah dan komuniti bagi mewujudkan ekosistem pembelajaran yang lebih holistik.</p></div>
+              <div class="sgm-box"><h3>Kualiti peribadi</h3><p>Guru perlu jujur, berdisiplin, reflektif, berintegriti dan sentiasa menjaga imej profesion sebagai teladan masyarakat.</p></div>
+              <div class="sgm-box"><h3>Instruksional</h3><p>Guru merancang, melaksana dan menilai pengajaran dengan berkesan melalui pendekatan berpusatkan murid, pentaksiran dan penambahbaikan berterusan.</p></div>
+            </div>
+          </article>
+          <article class="card infographic">
+            <h3>Hubungan SGM 2.0 dengan guru berkualiti</h3>
+            <div class="ring-grid">
+              <div class="ring">
+                <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="30" fill="none" stroke="var(--line)" stroke-width="8"/><circle cx="40" cy="40" r="30" fill="none" stroke="var(--primary)" stroke-width="8" stroke-dasharray="150 40" stroke-linecap="round" transform="rotate(-90 40 40)"/></svg>
+                <strong>Ilmu</strong><p class="small">Asas kompetensi profesional</p>
+              </div>
+              <div class="ring">
+                <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="30" fill="none" stroke="var(--line)" stroke-width="8"/><circle cx="40" cy="40" r="30" fill="none" stroke="var(--primary-2)" stroke-width="8" stroke-dasharray="132 58" stroke-linecap="round" transform="rotate(-90 40 40)"/></svg>
+                <strong>Etika</strong><p class="small">Membina kepercayaan masyarakat</p>
+              </div>
+              <div class="ring">
+                <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="30" fill="none" stroke="var(--line)" stroke-width="8"/><circle cx="40" cy="40" r="30" fill="none" stroke="var(--accent)" stroke-width="8" stroke-dasharray="142 48" stroke-linecap="round" transform="rotate(-90 40 40)"/></svg>
+                <strong>Komuniti</strong><p class="small">Memperkasa jaringan sokongan</p>
+              </div>
+            </div>
+            <table style="margin-top:1rem">
+              <thead><tr><th>Aspek</th><th>Impak terhadap guru</th></tr></thead>
+              <tbody>
+                <tr><td>Penilaian kendiri</td><td>Membantu guru mengenal pasti kelompangan kompetensi.</td></tr>
+                <tr><td>Perancangan PPB</td><td>Mengarahkan kursus, latihan dan amalan refleksi secara lebih fokus.</td></tr>
+                <tr><td>Kualiti profesional</td><td>Menjadikan pembangunan kerjaya lebih sistematik dan berasaskan standard.</td></tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pelan">
+      <div class="container">
+        <div class="section-head"><h2>Rancangan pembangunan profesional kendiri dan kerjaya</h2></div>
+        <div class="plan-grid">
+          <article class="card panel">
+            <h3>Matlamat jangka pendek</h3>
+            <ul class="plan-list">
+              <li>Mengukuhkan penguasaan pedagogi, pentaksiran bilik darjah dan pengurusan kelas.</li>
+              <li>Membiasakan diri dengan SGM 2.0 sebagai alat penilaian kendiri.</li>
+              <li>Mengikuti kursus digital asas seperti penggunaan AI secara beretika, pembinaan bahan interaktif dan analisis keperluan murid.</li>
+              <li>Membina tabiat refleksi mingguan serta menyimpan evidens profesional dalam e-portfolio.</li>
+            </ul>
+          </article>
+          <article class="card panel">
+            <h3>Matlamat jangka sederhana</h3>
+            <ul class="plan-list">
+              <li>Melibatkan diri secara aktif dalam PLC, teacher sharing session dan peer coaching.</li>
+              <li>Menghasilkan inovasi PdP, bahan digital atau kajian tindakan berskala kecil.</li>
+              <li>Mengumpul kelayakan mikro berkaitan pedagogi, teknologi dan kepimpinan instruksional.</li>
+              <li>Meningkatkan kemahiran komunikasi dengan ibu bapa, komuniti dan rakan profesional.</li>
+            </ul>
+          </article>
+          <article class="card panel">
+            <h3>Matlamat jangka panjang</h3>
+            <ul class="plan-list">
+              <li>Menjadi guru yang mampu membimbing rakan sejawat dan memimpin perubahan di sekolah.</li>
+              <li>Melanjutkan pengajian atau latihan lanjutan mengikut keperluan kerjaya.</li>
+              <li>Membina jaringan profesional peringkat kebangsaan dan antarabangsa.</li>
+              <li>Menyumbang kepada amalan pendidikan yang berkualiti, inklusif dan berimpak global.</li>
+            </ul>
+          </article>
+          <article class="card panel highlight">
+            <h3>Prinsip pelaksanaan</h3>
+            <ul class="plan-list">
+              <li>Berterusan, bukan bermusim.</li>
+              <li>Berasaskan data, refleksi dan keperluan murid.</li>
+              <li>Seimbang antara arahan dasar dan inisiatif kendiri.</li>
+              <li>Memanfaatkan teknologi secara beretika dan bermakna.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head"><h2>Pelan tindakan mengikut fasa kerjaya</h2></div>
+        <div class="career-map">
+          <article class="path card">
+            <span class="badge">Fasa 1 • Tahun awal</span>
+            <h3>Membina asas</h3>
+            <p>Fokus kepada penguasaan bilik darjah, etika kerja, dokumentasi profesional, penggunaan teknologi asas dan penyesuaian kepada budaya sekolah.</p>
+          </article>
+          <article class="path card">
+            <span class="badge">Fasa 2 • Tahun pertengahan</span>
+            <h3>Memperkukuh kepakaran</h3>
+            <p>Fokus kepada pengkhususan pedagogi, pembelajaran berasaskan data, penyertaan PLC, inovasi PdP dan pengumpulan kelayakan mikro.</p>
+          </article>
+          <article class="path card">
+            <span class="badge">Fasa 3 • Tahun lanjutan</span>
+            <h3>Memimpin dan menyumbang</h3>
+            <p>Fokus kepada kepimpinan instruksional, bimbingan rakan sejawat, penyelidikan, perkongsian amalan terbaik dan jaringan pendidikan yang lebih luas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container media-grid">
+        <article class="card panel">
+          <div class="section-head"><h2>Pendekatan futuristik</h2></div>
+          <p>Bagi mendepani transformasi pendidikan, pembangunan kerjaya guru tidak boleh terhad kepada kursus tradisional sahaja. Guru masa hadapan perlu memanfaatkan teknologi digital secara beretika untuk mempercepat pembelajaran, memperkayakan bahan pengajaran dan memperluas jaringan profesional.</p>
+          <ul class="plan-list">
+            <li>AI digunakan sebagai pembantu merancang bahan, bukannya pengganti pertimbangan profesional.</li>
+            <li>Kelayakan mikro membantu guru belajar secara modular, fleksibel dan mengikut keperluan sebenar.</li>
+            <li>PLC maya membolehkan perkongsian idea merentas sekolah, daerah dan negara.</li>
+            <li>E-portfolio digital menjadi evidens pembelajaran sepanjang hayat yang boleh dikemas kini secara berterusan.</li>
+          </ul>
+        </article>
+        <article class="card panel">
+          <div class="section-head"><h2>Amalan pembelajaran berterusan</h2></div>
+          <p>Sebagai bakal guru, saya melihat pembelajaran sepanjang hayat sebagai komitmen profesional yang mesti dihidupkan dalam tindakan harian. Setiap kursus, bacaan, refleksi, maklum balas, pengalaman lapangan dan kolaborasi perlu diterjemah menjadi penambahbaikan sebenar dalam amalan pengajaran.</p>
+          <ul class="plan-list">
+            <li>Membaca bahan profesional secara berkala.</li>
+            <li>Menyertai webinar, kursus atau komuniti ilmu.</li>
+            <li>Membuat refleksi selepas pengalaman pengajaran.</li>
+            <li>Merekod pencapaian serta bukti perkembangan dalam portfolio digital.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+      
+    <section id="semak-kendiri">
+      <div class="container">
+        <div class="section-head"><h2>Semak kendiri SGM 2.0</h2></div>
+        <article class="card panel">
+          <p>Klik pada dimensi yang anda rasa paling perlu diperkukuh sekarang. Sistem akan memaparkan cadangan pembangunan ringkas supaya pembaca dapat berinteraksi dengan kandungan, bukan sekadar membaca.</p>
+          <div class="check-grid" id="checkGrid">
+            <button class="check-option" type="button" data-sgm="ilmu"><strong>Orientasi ilmu</strong><br><span class="muted">Penguasaan subjek, pedagogi dan ilmu baharu.</span></button>
+            <button class="check-option" type="button" data-sgm="instruksional"><strong>Instruksional</strong><br><span class="muted">Perancangan, pelaksanaan dan pentaksiran PdP.</span></button>
+            <button class="check-option" type="button" data-sgm="peribadi"><strong>Kualiti peribadi</strong><br><span class="muted">Etika, integriti, refleksi dan disiplin profesional.</span></button>
+            <button class="check-option" type="button" data-sgm="komuniti"><strong>Pelibatan komuniti</strong><br><span class="muted">Hubungan dengan ibu bapa, sekolah dan jaringan profesional.</span></button>
+          </div>
+          <div class="result-box" id="sgmResult" aria-live="polite">Pilih satu dimensi untuk melihat cadangan tindakan.</div>
+        </article>
+      </div>
+    </section>
+
+<section id="kuiz">
+      <div class="container">
+        <div class="section-head"><h2>Kuiz interaktif: semak kefahaman</h2></div>
+        <div class="quiz-wrap">
+          <article class="card question">
+            <div class="badge">Interaktif</div>
+            <h3 id="question-title">Soalan akan dipaparkan di sini.</h3>
+            <div class="options" id="options"></div>
+            <p id="feedback" class="small muted" aria-live="polite">Pilih jawapan yang paling tepat.</p>
+            <div class="cta-row">
+              <button class="btn btn-secondary" id="nextBtn" type="button">Soalan seterusnya</button>
+              <button class="btn btn-primary" id="restartBtn" type="button">Mula semula</button>
+            </div>
+          </article>
+          <aside class="card tracker">
+            <h3>Penjejak perkembangan kerjaya</h3>
+            <p>Bar ini menunjukkan simulasi kemajuan pembangunan profesional daripada tahap asas ke tahap strategik.</p>
+            <div class="meter" aria-label="Meter perkembangan"><span id="careerMeter"></span></div>
+            <div class="score" id="score">0/5</div>
+            <ul class="quiz-list">
+              <li>1/5: asas profesion dan penyesuaian awal.</li>
+              <li>2/5: pelaksanaan tugas dengan lebih stabil.</li>
+              <li>3/5: mula menggerakkan inovasi dan kolaborasi.</li>
+              <li>4/5: berupaya membimbing dan memimpin amalan.</li>
+              <li>5/5: bersedia berfikir secara strategik dan global.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container two-col">
+        <article class="card panel">
+          <div class="section-head"><h2>Kesimpulan</h2></div>
+          <p>Secara keseluruhannya, pembangunan profesional kendiri dan kerjaya guru perlu dirancang secara komprehensif, progresif dan berpandukan standard yang jelas. Enam peringkat perkembangan guru KPM memberi gambaran tentang evolusi peranan guru, manakala SGM 2.0 pula menjadi panduan untuk mengekalkan kualiti profesional dari segi ilmu, nilai, hubungan sosial dan amalan instruksional.</p>
+          <p>Melalui pelan tindakan yang terancang, amalan reflektif, penggunaan teknologi yang beretika dan komitmen terhadap pembelajaran sepanjang hayat, saya berhasrat untuk membangunkan diri sebagai guru berkualiti yang mampu menyumbang bukan sahaja di sekolah, tetapi juga pada peringkat komuniti, kebangsaan dan global.</p>
+        </article>
+        <article class="card panel">
+          <div class="section-head"><h2>Maklumat pelajar</h2></div>
+          <p class="small">Sila gantikan maklumat berikut dengan maklumat sebenar anda sebelum dihantar.</p>
+          <table>
+            <tbody>
+              <tr><th>Nama Pelajar</th><td>[Isi nama penuh]</td></tr>
+              <tr><th>Angka Giliran</th><td>[Isi angka giliran]</td></tr>
+              <tr><th>No. Kad Pengenalan</th><td>[Isi nombor kad pengenalan]</td></tr>
+              <tr><th>Kumpulan / Unit</th><td>[Isi kumpulan atau unit]</td></tr>
+              <tr><th>Kod dan Nama Kursus</th><td>EDUP3163 Profesionalisme Keguruan dan Kepimpinan Guru</td></tr>
+              <tr><th>Nama Pensyarah</th><td>[Isi nama pensyarah]</td></tr>
+              <tr><th>Tarikh Hantar</th><td>[Isi tarikh hantar]</td></tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+
+    <section id="rujukan">
+      <div class="container">
+        <div class="section-head"><h2>Rujukan</h2></div>
+        <article class="card panel apa">
+          <ol class="apa ref-list">
+            <li>Bahagian Pendidikan Guru. (2014). <em>Pelan pembangunan profesionalisme berterusan</em>. Kementerian Pendidikan Malaysia.</li>
+            <li>Coughlan, M., & Perez, K. (2024). <em>The emerging teacher leader: Six dynamic practices to nurture professional growth</em>. Solution Tree Press.</li>
+            <li>Kementerian Pendidikan Malaysia. (2016). <em>Deskripsi tugas pegawai perkhidmatan pendidikan</em>. Kementerian Pendidikan Malaysia.</li>
+            <li>Kementerian Pendidikan Malaysia. (2023). <em>Dokumen standard guru Malaysia 2.0</em>. Bahagian Profesionalisme Guru.</li>
+            <li>Lieberman, A., Campbell, C., & Yashkina, A. (2017). Teacher learning and leadership of learning in schools. In D. Waite & I. Bogotch (Eds.), <em>The Wiley international handbook of educational leadership</em> (pp. 263–281). Wiley.</li>
+            <li>Satya, S. S. (Ed.). (2018). <em>Higher education and professional ethics: Roles and responsibilities of teachers</em>. Routledge.</li>
+            <li>UNICEF, & SEAMEO. (2020). <em>SEA-PLM 2019 main regional report: Children’s learning in six Southeast Asian countries</em>. UNICEF East Asia and Pacific Regional Office.</li>
+            <li>Webster, R. S., & Whelen, J. D. (Eds.). (2019). <em>Rethinking reflection and ethics for teachers</em>. Springer.</li>
+            <li>World Bank. (2018). <em>Malaysia economic monitor: Realizing human potential</em>. World Bank.</li>
+                      <li>Bahagian Pendidikan Guru. (2014). <em>Pelan pembangunan profesionalisme berterusan</em>. Kementerian Pendidikan Malaysia.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <article class="card footer-note">
+        <h3>Catatan akhir</h3>
+        <p>Laman ini dibina sebagai produk digital kreatif yang menekankan kandungan akademik, kebolehbacaan, interaktiviti dan reka bentuk profesional. Semua bahagian boleh terus disunting agar lebih menepati identiti, pengalaman dan aspirasi sebenar pemilik e-portfolio.</p>
+      </article>
+      <article class="card footer-note">
+        <h3>Peringatan sebelum hantar</h3>
+        <ul class="plan-list">
+          <li>Semak nama, angka giliran dan maklumat pensyarah.</li>
+          <li>Sesuaikan pelan tindakan dengan pengalaman dan matlamat sebenar anda.</li>
+          <li>Pastikan pautan GitHub Pages atau hosting dibuka dengan baik.</li>
+          <li>Semak semula ejaan dan gaya bahasa sebelum penyerahan.</li>
+        </ul>
+      </article>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const btn=document.querySelector('[data-theme-toggle]');
+      const root=document.documentElement;
+      let mode=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+      function apply(){root.setAttribute('data-theme',mode);btn.textContent=mode==='dark'?'☀':'☾';btn.setAttribute('aria-label',mode==='dark'?'Tukar ke mod cerah':'Tukar ke mod gelap');}
+      apply(); btn.addEventListener('click',()=>{mode=mode==='dark'?'light':'dark';apply();});
+    })();
+
+    const quiz = [
+      {q:'Apakah fokus utama peringkat permulaan dalam perkembangan guru?', options:['Memimpin perubahan dasar pendidikan','Menyesuaikan diri dengan budaya sekolah dan mengukuhkan asas pedagogi','Menjadi pakar rujuk antarabangsa'], answer:1, explain:'Peringkat permulaan menekankan penyesuaian awal, penguasaan asas tugas dan bimbingan mentor.'},
+      {q:'Mengapakah SGM 2.0 penting dalam pembangunan profesional guru?', options:['Sebagai dokumen hiasan semata-mata','Sebagai alat penilaian kendiri dan panduan merancang pembangunan kompetensi','Sebagai pengganti semua pengalaman mengajar'], answer:1, explain:'SGM 2.0 membantu guru menilai diri dan merancang peningkatan kompetensi secara sistematik.'},
+      {q:'Apakah contoh amalan yang sesuai pada peringkat pembimbing?', options:['Tidak berkongsi amalan dengan sesiapa','Membimbing rakan sejawat melalui PLC atau peer coaching','Hanya memberi tumpuan kepada kerja sendiri'], answer:1, explain:'Guru pada peringkat pembimbing mula membantu orang lain dan membina budaya kolaboratif.'},
+      {q:'Apakah maksud pendekatan futuristik dalam kerjaya guru?', options:['Bergantung sepenuhnya kepada mesin tanpa pertimbangan profesional','Memanfaatkan teknologi, AI, kelayakan mikro dan jaringan digital secara beretika','Mengelakkan semua perubahan teknologi'], answer:1, explain:'Pendekatan futuristik ialah penggunaan inovasi digital secara bertanggungjawab untuk meningkatkan kualiti amalan.'},
+      {q:'Apakah hasil akhir yang dihasratkan melalui pelan pembangunan kendiri dan kerjaya?', options:['Menjadi guru yang statik dan selesa pada satu tahap','Meningkatkan ilmu, kemahiran dan sumbangan hingga ke peringkat global','Mengumpul sijil tanpa perubahan amalan'], answer:1, explain:'Matlamat utama ialah pertumbuhan profesional yang berterusan dan berimpak luas.'}
+    ];
+    let current = 0, score = 0, locked = false;
+    const qTitle=document.getElementById('question-title');
+    const options=document.getElementById('options');
+    const feedback=document.getElementById('feedback');
+    const scoreEl=document.getElementById('score');
+    const meter=document.getElementById('careerMeter');
+    const nextBtn=document.getElementById('nextBtn');
+    const restartBtn=document.getElementById('restartBtn');
+
+    function render(){
+      const item=quiz[current]; locked=false;
+      qTitle.textContent=(current+1)+'. '+item.q;
+      options.innerHTML='';
+      item.options.forEach((opt,i)=>{
+        const b=document.createElement('button');
+        b.className='option'; b.type='button'; b.textContent=opt;
+        b.addEventListener('click',()=>choose(i,b));
+        options.appendChild(b);
+      });
+      feedback.textContent='Pilih jawapan yang paling tepat.';
+      updateProgress();
+    }
+    function choose(i,btn){
+      if(locked) return; locked=true;
+      const item=quiz[current];
+      [...options.children].forEach((el,index)=>{ if(index===item.answer) el.classList.add('correct'); });
+      if(i===item.answer){ score++; btn.classList.add('correct'); feedback.textContent='Betul. '+item.explain; }
+      else { btn.classList.add('wrong'); feedback.textContent='Kurang tepat. '+item.explain; }
+      updateProgress();
+    }
+    function updateProgress(){ scoreEl.textContent=score+'/'+quiz.length; meter.style.width=((score/quiz.length)*100)+'%'; }
+    nextBtn.addEventListener('click',()=>{ current=(current+1)%quiz.length; render(); });
+    restartBtn.addEventListener('click',()=>{ current=0; score=0; render(); });
+    render();
+
+    const roadBtns=[...document.querySelectorAll('.road-btn')];
+    const roadCards=[...document.querySelectorAll('.road-card')];
+    roadBtns.forEach(btn=>btn.addEventListener('click',()=>{
+      const idx=btn.dataset.road;
+      roadBtns.forEach(b=>b.classList.remove('active'));
+      roadCards.forEach(c=>c.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelector(`.road-card[data-card="${idx}"]`).classList.add('active');
+    }));
+
+    const sgmMap={
+      ilmu:'Cadangan: Tambah pembacaan profesional, ikuti kursus kelayakan mikro dan kemas kini pengetahuan pedagogi supaya asas ilmu sentiasa relevan.',
+      instruksional:'Cadangan: Perkukuh rancangan PdP, pentaksiran formatif dan penggunaan data murid supaya pengajaran lebih tersusun dan berkesan.',
+      peribadi:'Cadangan: Amalkan refleksi mingguan, disiplin dokumentasi dan integriti tugas agar identiti profesional menjadi lebih kukuh.',
+      komuniti:'Cadangan: Libatkan diri dalam PLC, komunikasi dengan ibu bapa dan perkongsian guru supaya sokongan profesional menjadi lebih luas.'
+    };
+    const result=document.getElementById('sgmResult');
+    document.querySelectorAll('.check-option').forEach(btn=>btn.addEventListener('click',()=>{
+      document.querySelectorAll('.check-option').forEach(b=>b.classList.remove('selected'));
+      btn.classList.add('selected');
+      result.textContent=sgmMap[btn.dataset.sgm];
+    }));
+  </script>
+</body>
+</html>
